@@ -39,7 +39,9 @@ node {
           if(violations == true){
                 echo "Violations were found. Its ok, these things happen..."
                 sh 'python3 /var/jenkins_home/app/image_validate_slack.py cbctl_image_validate.json'
-                sh "python3 /var/jenkins_home/app/failure.py '${env.JOB_NAME}' '${env.BUILD_NUMBER}' '${env.STAGE_NAME}'"
+                sh "python3 /var/jenkins_home/app/failure.py '${env.JOB_NAME}' '${env.BUILD_NUMBER}' 'Cbctl Image Validate'"
+                error("Failed Deployment due to CB Container policy violations.")
+
             }
         }
     }
