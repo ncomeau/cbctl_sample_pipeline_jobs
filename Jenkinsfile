@@ -9,7 +9,7 @@ node {
     ]){
         
         // Perform cbctl validate of the specified image against your CBC K8s policy, which maps to the applied scope & policy specified in the config yaml
-        stage('Cbctl Image Scan') {
+        stage('Cbctl Image Validate') {
          
             sh '/var/jenkins_home/app/cbctl image validate ${REPO}/${IMAGE}:${TAG} -o json > cbctl_image_validate.json'
         }
