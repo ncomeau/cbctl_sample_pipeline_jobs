@@ -41,7 +41,7 @@ node {
             }
         }
       
-      stage('Confrim Success/Failure'){
+      stage('Confirm Success/Failure'){
         
         if(violations == false){
           echo "No violations found. You're image is good to go!"
