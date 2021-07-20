@@ -52,5 +52,6 @@ node {
           sh "python3 /var/jenkins_home/app/failure.py '${env.JOB_NAME}' '${env.BUILD_NUMBER}' '${env.STAGE_NAME}'"
           error("Failed Deployment due to CB Container policy violations.")
         }
+      }
     }
 }
