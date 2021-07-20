@@ -2,16 +2,16 @@ node {
   
     // Set env variables for easy image changing
     withEnv([
-    "REPO=ncomeau",
-    "IMAGE=demo",
-    "TAG=latest",
+      "REPO=ncomeau",
+      "IMAGE=demo",
+      "TAG=latest",
     ]){
         
         // Perform cbctl vuln scan of specified image
         stage('Cbctl Image Scan') {
          
             sh '/var/jenkins_home/app/cbctl image scan ${REPO}/${IMAGE}:${TAG} -o json > cbctl_image_scan.json'
- }
+        }
         
         // Send Results of cbctl scan to Slack w/pre-built helper python scripts
         stage('Send Results to Slack'){
