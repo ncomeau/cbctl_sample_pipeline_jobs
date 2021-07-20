@@ -1,7 +1,14 @@
 node {
+    
+   withEnv([
+    "REPO=ncomeau",
+    "IMAGE=demo",
+    "TAG=latest",
+    ]){
+        
      stage('Cbctl Image Scan') {
          
-     sh '/var/jenkins_home/app/cbctl image scan ncomeau/demo -o json > cbctl_image_scan.json'
+     sh '/var/jenkins_home/app/cbctl image scan ${REPO}/${IMAGE}:${TAG} -o json > cbctl_image_scan.json'
      
     }
     stage('Send Results to Slack'){
@@ -17,6 +24,7 @@ node {
         }
         catch(fail){
             sh "python3 /var/jenkins_home/app/failure.py '${env.JOB_NAME}' '${env.BUILD_NUMBER}' '${env.STAGE_NAME}'"
+            }
         }
     }
 }
