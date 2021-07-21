@@ -3,9 +3,29 @@ node {
     violations = false
   
     // Cloning the Repository to jenkins-docker Workspace
-      stage('Get Example Yaml') {
-
-          checkout scm
+      stage('Create Example Yaml') {
+        try{
+          writeFile file: 'example.yaml', text: """
+apiVersion: v1
+kind: Pod
+metadata:
+  name: static-site
+  labels:
+    app: static-site
+spec:
+  hostNetwork: true
+  containers:
+    - name: static-site
+      image: ncomeau/demo
+      ports:
+      - containerPort: 80
+        hostPort: 80
+        name: static-site"""
+        }
+        
+        catch(exists){
+          echo 'File already exists'
+        }
       }
         // Perform cbctl validate of the specified image against your CBC K8s policy, which maps to the applied scope & policy specified in the config yaml
         stage('Cbctl K8s Object Validate') {
