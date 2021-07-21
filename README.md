@@ -35,6 +35,8 @@ There are 2 options for running any of the simple single-use jobs, which are elu
 
 ## Option 1: Import the Jenkinsfile 
 
+***This is the recommended approach, because this process will be required for the [full pipeline demo](https://github.com/JaBarosin/K8sConfigs) to get the necessary files. However, option 2 is certainly easier, and viable for these single-use examples***
+
 1. Login to your Jenkins Server _(can be either on the demo vm - 0.0.0.0:8080, or your Mac \<demo_machine_ip\>:8080)_
 
 2. Select either ```Create a Job``` or ```New Item``` on the left-hand side
@@ -61,10 +63,11 @@ There are 2 options for running any of the simple single-use jobs, which are elu
 ![image](https://user-images.githubusercontent.com/18126247/126559789-c4d63498-ab01-4408-bf45-a4fba1115f39.png)
 
 
-![image](https://user-images.githubusercontent.com/18126247/126559967-a18f93d1-5a05-4fa1-b8fc-e1119ebb5cdb.png)
 
 
 ## Option 2: Copy and Paste Jenkinsfile
+
+***This is the simplier of the two approaches, and allows for easy customization of the Jenkinsfile content within Jenkins, without having to fork this repo. However, although viable for these single-use examples, it does some limitations when utilizing more complex [demo pipelines](https://github.com/JaBarosin/K8sConfigs).***
 
 1. Within this Github repo, navigate to the branch for the cbctl function you are intending to utilize
 
@@ -81,6 +84,7 @@ There are 2 options for running any of the simple single-use jobs, which are elu
       ![image](https://user-images.githubusercontent.com/18126247/126561641-eead9f0a-7e67-473d-ac44-72f3a28a1ddd.png)
 
 6.  Everything should be all set - simply click ```Build Now``` on the left-hand side, and see it all in action!
+![image](https://user-images.githubusercontent.com/18126247/126562236-3c641b2b-2303-409b-85d1-a9e0436ed00f.png)
 
 
 
