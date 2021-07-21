@@ -11,7 +11,7 @@ node {
         stage('Cbctl K8s Object Validate') {
           
           try{
-            sh '/var/jenkins_home/app/cbctl k8s-object validate example.yaml -o json > cbctl_k8s_validate.json'
+            sh '/var/jenkins_home/app/cbctl k8s-object validate -f example.yaml -o json > cbctl_k8s_validate.json'
           }
           
           catch(violate){
