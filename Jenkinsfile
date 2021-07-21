@@ -1,13 +1,12 @@
 node {
   
     violations = false
-    // Set env variables for easy image changing
-    withEnv([
-      "REPO=ncomeau",
-      "IMAGE=demo",
-      "TAG=latest",
-    ]){
-        
+  
+    // Cloning the Repository to jenkins-docker Workspace
+      stage('Get Example Yaml') {
+
+          checkout scm
+      }
         // Perform cbctl validate of the specified image against your CBC K8s policy, which maps to the applied scope & policy specified in the config yaml
         stage('Cbctl K8s Object Validate') {
           
@@ -53,4 +52,4 @@ node {
         }
       }
     }
-}
+
