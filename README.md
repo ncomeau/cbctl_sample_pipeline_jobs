@@ -37,4 +37,3 @@ Instructions remain the same as they were outlined [here.](https://github.com/nc
    * **Note**: _The failure is intentional, because my CBC Container Image policy had 'Vulnerabilities with Fixes' as an applicable rule - this can be entirely customized, based on your own CBC K8s Policy for container images._
    
 ![image](https://user-images.githubusercontent.com/18126247/126817090-580f8b5d-0d87-4efa-90f3-fc2c9398ab95.png)
-
