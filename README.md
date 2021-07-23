@@ -1,4 +1,4 @@
-# cbctl Sample Pipeline Jobs - Image Validate
+# cbctl Sample Pipeline Jobs - K8s Validate
 
 This branch contains a single-use Jenkins job, aimed at highlighting the ```cbctl k8s-object validate``` capability. This capability allows for validating the k8s yaml file configs against the applicable CBC K8s security policy. Effectively allowing you to identify potential k8s configuration violations prior to deploying said image into your environment; in an effort to improve hygiene, and maintain a proactive container security posture.
 
