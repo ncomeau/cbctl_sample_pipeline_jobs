@@ -1,6 +1,6 @@
 # cbctl Sample Pipeline Jobs - Image Validate
 
-This branch contains a single-use Jenkins job, aimed at highlighting the ```cbctl image validate``` capability. This capability allows for validating the container image against the applicable CBC K8s security policy. Thus, effectively allowing for the identification of potential image violations, prior to deploying said image into your environment, and optimization of a CI/CD deployment pipeline.
+This branch contains a single-use Jenkins job, aimed at highlighting the ```cbctl image validate``` capability. This capability allows for validating the container image against the applicable CBC K8s Container Security policy. Thus, effectively allowing for the identification of potential image violations, prior to deploying said image into your environment, and optimization of a CI/CD deployment pipeline.
 
 ## Setup
 
@@ -27,14 +27,14 @@ Instructions remain the same as they were outlined [here.](https://github.com/nc
 ## Output
 
 ### Jenkins
-   * **Note**: _The failure is intentional, because my K8s image policy had 'Vulnerabilities with Fixes' as an applicable rule - this can be entirely customized, based on your own CBC K8s Policy for container images._
+   * **Note**: _The failure is intentional, because my CBC Container Image policy had 'Vulnerabilities with Fixes' as an applicable rule - this can be entirely customized, based on your own CBC K8s Policy for container images._
    
 ![image](https://user-images.githubusercontent.com/18126247/126816777-5b01193b-4b9a-41de-8961-41331b6545c2.png)
 
 
 
 ### Slack
-   * **Note**: _The failure is intentional, because my K8s image policy had 'Vulnerabilities with Fixes' as an applicable rule - this can be entirely customized, based on your own CBC K8s Policy for container images._
+   * **Note**: _The failure is intentional, because my CBC Container Image policy had 'Vulnerabilities with Fixes' as an applicable rule - this can be entirely customized, based on your own CBC K8s Policy for container images._
    
 ![image](https://user-images.githubusercontent.com/18126247/126817090-580f8b5d-0d87-4efa-90f3-fc2c9398ab95.png)
 
