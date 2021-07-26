@@ -12,7 +12,7 @@ If you want a more wholistic representation of how cbctl can be seamlessly incor
 
 ### Overview
 
-As noted above, the forthcoming instructions are predicated on the notion that you have successfully completed the setup of the [CBC_Container_CICD_Demo](https://github.com/ncomeau/CBC_Container_CICD_Demo) demo environment.
+As noted above, the forthcoming instructions are predicated on the notion that you have successfully completed the setup of the [CBC_Container_CICD_Demo Env](https://github.com/ncomeau/CBC_Container_CICD_Demo) demo environment.
 
 This repository is comprised of 4 Branches:
   * **_main_** - this is purely used for initial overview and setup instructions
