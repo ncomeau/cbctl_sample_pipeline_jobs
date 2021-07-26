@@ -67,7 +67,7 @@ There are 2 options for running any of the simple single-use jobs, which are elu
 
 ## Option 2: Copy and Paste Jenkinsfile
 
-***This is the simplier of the two approaches, and allows for easy customization of the Jenkinsfile content within Jenkins, without having to fork this repo. However, although viable for these single-use examples, it does some limitations when utilizing more complex [demo pipelines](https://github.com/JaBarosin/K8sConfigs).***
+***This is the simplier of the two approaches, and allows for easy customization of the Jenkinsfile content within Jenkins, without having to fork this repo. However, although viable for these single-use examples, it does some limitations when utilizing more wholistic [demo pipelines](https://github.com/JaBarosin/K8sConfigs).***
 
 1. Within this Github repo, navigate to the branch for the cbctl function you are intending to utilize
 
