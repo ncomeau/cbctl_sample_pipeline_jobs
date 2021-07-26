@@ -1,6 +1,6 @@
 # cbctl Sample Pipeline Jobs
 
-In order to leverage this repo, please start by setting up your environment by following the [CBC_Container_CICD_Demo](https://github.com/ncomeau/CBC_Container_CICD_Demo) demo environment setup guide.
+In order to leverage this repo, please start by setting up your environment by following the [CBC_Container_CICD_Demo](https://github.com/ncomeau/CBC_Container_CICD_Demo_Env) demo environment setup guide.
 
 This repository is intended to provide several simple, single-use, Jenkins Pipeline Jobs. Each of these jobs are intended to highlight a specific capability offered by the CBC Container Security cbctl utility. 
 
@@ -12,7 +12,7 @@ If you want a more wholistic representation of how cbctl can be seamlessly incor
 
 ### Overview
 
-As noted above, the forthcoming instructions are predicated on the notion that you have successfully completed the setup of the [CBC_Container_CICD_Demo Env](https://github.com/ncomeau/CBC_Container_CICD_Demo) demo environment.
+As noted above, the forthcoming instructions are predicated on the notion that you have successfully completed the setup of the [CBC_Container_CICD_Demo Env](https://github.com/ncomeau/CBC_Container_CICD_Demo_Env) demo environment.
 
 This repository is comprised of 4 Branches:
   * **_main_** - this is purely used for initial overview and setup instructions
