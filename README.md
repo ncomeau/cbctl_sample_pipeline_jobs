@@ -1,6 +1,6 @@
 # cbctl Sample Pipeline Jobs
 
-In order to leverage this repo, please start by setting up your environment by following the [CBC_Container_CICD_Demo](https://github.com/ncomeau/CBC_Container_CICD_Demo_Env) demo environment setup guide.
+In order to leverage this repo, please start by setting up your environment by following the [CBC_Container_CICD_Demo_env](https://github.com/ncomeau/CBC_Container_CICD_Demo_Env) demo environment setup guide.
 
 This repository is intended to provide several simple, single-use, Jenkins Pipeline Jobs. Each of these jobs are intended to highlight a specific capability offered by the CBC Container Security cbctl utility. 
 
